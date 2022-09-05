@@ -11,7 +11,7 @@ code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
         monospace;
 }
-.btn {
+/* .btn {
     all: unset;
     width: 100px;
     padding: 5px;
@@ -59,9 +59,11 @@ nav {
 }
 .btn-post:focus {
     background-color: rgb(108, 89, 255);
-}
-h2 {
+} */
+h2,
+h4 {
     text-transform: capitalize;
+    font-size: 0.75em;
 }
 
 article {
@@ -69,4 +71,20 @@ article {
     margin-left: 20px;
     background-color: lightgrey;
     padding: 25px;
+    margin-bottom: 15px;
+}
+/* .card-img,
+.card-img-bottom,
+.card-img-top {
+    width: 50% !important;
+} */
+.users-container {
+    border: 1px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.user-item {
+    margin-top: 20px;
+    margin-bottom: 15px;
 }

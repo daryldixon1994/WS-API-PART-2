@@ -1,21 +1,19 @@
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
 import Layout from "./components/Layout";
-import Users from "./components/Users";
 import Home from "./components/Home";
-import Profile from "./components/Profile";
+import Users from "./components/Users";
+import Posts from "./components/Posts";
 function App() {
     return (
         <div className="App">
-            <header className="App-header">
-                <Routes>
-                    <Route path="/" element={<Layout />}>
-                        <Route index element={<Home />} />
-                        <Route path="users" element={<Users />} />
-                        <Route path="profile/:id" element={<Profile />} />
-                    </Route>
-                </Routes>
-            </header>
+            <Routes>
+                <Route path="/" element={<Layout />}>
+                    <Route index element={<Home />} />
+                    <Route path="users" element={<Users />} />
+                    <Route path="posts/:id" element={<Posts />} />
+                </Route>
+            </Routes>
         </div>
     );
 }
